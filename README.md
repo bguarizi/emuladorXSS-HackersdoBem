@@ -1,5 +1,10 @@
 # Hackers do Bem - GT-EXSS
 
+Este repositório está vinculado ao artigo "Um Emulador Educativo de Ataques Cross-Site Scripting". O artigo foi publicado no Salão de Ferramenta da 24º edição do Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais.
+
+Resumo: Este trabalho propõe um emulador de ataques Cross-Site Scripting (XSS) para o aprendizado prático em cibersegurança. O emulador permite que usuários identifiquem sítios Web vulneráveis a ataques XSS em um ambiente controlado. A identificação de vulnerabilidades se dá pela realização de atividades que são compostas por uma introdução teórica sobre o assunto da atividade, seguida de procedimentos práticos para a realização de testes de vulnerabilidade XSS em um servidor Web executado em uma máquina virtual. Ao fim da atividade, o usuário recebe sugestões de melhorias para corrigir as vulnerabilidades XSS dessa atividade. São desenvolvidas atividades para diferentes níveis de conhecimento. A particularidade do emulador proposto é a sua abordagem educativa e seu objetivo é conscientizar alunos de graduação e profissionais de TI a desenvolver sítios Web menos vulneráveis.
+
+
 ## Tópicos
 
 - [Instalação](#instalação)
@@ -51,7 +56,7 @@ E pronto, você já está acessando o nosso conteúdo localmente em sua própria
 
 ## Recriar
 
-Esta seção é uma demontração de como configurar todo o ambiente do projeto criando uma máquina virtual do zero. Caso já tenha feito a instalação padrão no passo a passo anterior, esta seção não será necessária.
+Esta seção é uma demonstração de como configurar todo o ambiente do projeto criando uma máquina virtual do zero. Caso já tenha feito a instalação padrão no passo a passo anterior, esta seção não será necessária.
 
 1. Realize a instalação do VirtualBox ou VMWare:
 
@@ -114,15 +119,7 @@ Esta seção é uma demontração de como configurar todo o ambiente do projeto 
     sudo mysql_secure_installation
     ```
 
-    Selecione a tecla "Y" ou "y" para setar uma senha e logo em seguida escolha o nível da política de senha do seu banco de dados:
-
-    0 -> Baixa
-    1 -> Média
-    2 -> Forte
-
-    Lembre-se que, ao escolher um destes níveis, você deverá seguir as regras de quantidades de caracteres e adição de caracteres especiais e outros que é descrito pela política.
-
-    Digite a senha desejada na etapa seguinte, repetindo a senha logo em seguida para confirmação.
+    Selecione a tecla "Y" ou "y" para setar uma senha e logo em seguida escolha o nível da política de senha do seu banco de dados selecionando a opção 0.
 
     Para as perguntas seguintes a esta, selecione "Y" ou "y" em todas para aceitar.
 
@@ -134,7 +131,7 @@ Esta seção é uma demontração de como configurar todo o ambiente do projeto 
     sudo mysql -u root -p
     ```
 
-    Digite a senha escolhida. Caso seu acesso ao mysql tenha sido executado as configurações foram realizadas corretamente.
+    Pressione Enter. Caso seu acesso ao mysql tenha sido executado, as configurações foram realizadas corretamente.
 
     Para sair do mysql digite:
 
@@ -158,12 +155,6 @@ Esta seção é uma demontração de como configurar todo o ambiente do projeto 
 
     Caso o retorno seja "mysqli" a instalação está correta.
 
-    Ative o módulo PHP no Apache:
-    
-    ```bash
-    sudo a2enmod php
-    ```
-
     Reinicie o Apache:
 
     ```bash
@@ -180,7 +171,7 @@ Esta seção é uma demontração de como configurar todo o ambiente do projeto 
     Clone o repositório do projeto:
 
     ```bash
-    git clone https://github.com/bguarizi/emuladorXSS-HackersdoBem.git
+    git clone https://github.com/bguarizi/emuladorXSS-HackersdoBem
     ```
 
 9. Recrie a base de dados do projeto no mysql:
@@ -219,7 +210,7 @@ Esta seção é uma demontração de como configurar todo o ambiente do projeto 
     Apague a pasta html:
 
     ```bash
-    sudo rm -r /var/www/htm
+    sudo rm -r /var/www/html
     ```
 
     Digite o comando:

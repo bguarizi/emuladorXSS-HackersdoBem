@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/menu.css" rel="stylesheet">
-    <link href="./css/fonts.css" rel="stylesheet">
-    <link href="./css/levels_selection.css" rel="stylesheet">
-    <link href="./css/tutorial_before_lab.css" rel="stylesheet">
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/bootstrap.bundle.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/menu.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/levels_selection.css" rel="stylesheet">
+    <link href="../css/tutorial_before_lab.css" rel="stylesheet">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-    <script src="./js/bootstrap.min4.5.js"></script>
-    <title>Bem vindo Membro, realize o LOGIN.</title>
+    <script src="../js/bootstrap.min4.5.js"></script>
+    <title>Tutorial XSS DOM</title>
 </head>
 
 <style>
@@ -26,7 +26,7 @@
     }
 
     .buttons{
-        margin-top: 60px;
+        margin-top: 80px;
     }
 
     .btn{
@@ -35,22 +35,24 @@
         color: white;
     }
 
-    .robot{
-        margin-left: -50px;
-        margin-top: 20px;
+    .robot_speech{
+        top: 80px;
     }
 
+    .robot{
+        margin-left: -50px;
+    }
 
 </style>
 
 <body>
     
     <div style="display: flex; width: 100%;">
-
+    
         <div class="menu-lateral" id="menu-lateral">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="./img/levels.png" alt="">Iniciante
+                    <img src="../img/levels.png" alt="">Iniciante
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <button class="dropdown-item" type="button">Intermediário</button>
@@ -61,32 +63,32 @@
             <hr class="levels_line mt-1 mb-3">
     
             <button type="button" class="close-btn">
-                <img src="./img/close-btn.png" onclick="close_menu()"></img>
+                <img src="../img/close-btn.png" onclick="close_menu()"></img>
             </button>
     
             <div class="img-div">
-                <img src="./img/logo_oficial_branca.svg" class="img-logo"></img>
+                <img src="../img/logo_oficial_branca.svg" class="img-logo"></img>
             </div>
     
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="./intro.html">Introdução</a>
+                    <a class="nav-link" href="../intro.html">Introdução</a>
                 </li>
                 <li class="nav-item" type="button" data-toggle="collapse" data-target="#XssRef" aria-expanded="false" aria-controls="opcoes">
                     <a class="nav-link active" aria-current="page" href="#">XSS Refletido</a>
                 </li>
                 <ul class="collapse ul-subitem" id="XssRef">
                     <li class="nav-subitem">
-                    <a href="./intro_refletido.html">Introdução</a><br>
+                    <a href="../intro_refletido.html">Introdução</a><br>
                     </li>
                     <li class="nav-subitem">
-                    <a href="./tutoriais/lab1-refletido1.html">Laboratório 1</a><br>
+                    <a href="./lab1-refletido1.html">Laboratório 1</a><br>
                     </li>
                     <li class="nav-subitem">
-                    <a href="./tutoriais/lab2-refletido1.html">Laboratório 2</a><br>
+                    <a href="./lab2-refletido1.html">Laboratório 2</a><br>
                     </li>
                     <li class="nav-subitem">
-                    <a href="./quiz_refletido.html">Perguntas</a><br>
+                    <a href="../quiz_refletido.html">Perguntas</a><br>
                     </li>
                 </ul>
                 <li class="nav-item" type="button" data-toggle="collapse" data-target="#xssarm" aria-expanded="false" aria-controls="opcoes">
@@ -94,16 +96,16 @@
                 </li>
                 <ul class="collapse ul-subitem" id="xssarm">
                     <li class="nav-subitem">
-                    <a href="./intro_armazenado.html">Introdução</a><br>
+                    <a href="../intro_armazenado.html">Introdução</a><br>
                     </li>
                     <li class="nav-subitem">
-                    <a href="./tutoriais/lab1-armazenado1.html">Laboratório 1</a><br>
+                    <a href="./lab1-armazenado1.html">Laboratório 1</a><br>
                     </li>
                     <li class="nav-subitem">
-                    <a href="./tutoriais/lab2-armazenado1.html">Laboratório 2</a><br>
+                    <a href="./lab2-armazenado1.html">Laboratório 2</a><br>
                     </li>
                     <li class="nav-subitem">
-                    <a href="./quiz_armazenado.html">Perguntas</a><br>
+                    <a href="../quiz_armazenado.html">Perguntas</a><br>
                     </li>
                 </ul>
                 <li class="nav-item" type="button" data-toggle="collapse" data-target="#xssdom" aria-expanded="false" aria-controls="opcoes">
@@ -111,16 +113,16 @@
                 </li>
                 <ul class="collapse ul-subitem" id="xssdom">
                     <li class="nav-subitem">
-                    <a href="./intro_dom.html">Introdução</a><br>
+                    <a href="../intro_dom.html">Introdução</a><br>
                     </li>
                     <li class="nav-subitem">
-                    <a href="./tutoriais/lab1-dom1.html">Laboratório 1</a><br>
+                    <a href="./lab1-dom1.html">Laboratório 1</a><br>
                     </li>
                     <li class="nav-subitem">
-                    <a href="./tutoriais/lab2-dom1.html">Laboratório 2</a><br>
+                    <a href="./lab2-dom1.html">Laboratório 2</a><br>
                     </li>
                     <li class="nav-subitem">
-                    <a href="./quiz_dom.html">Perguntas</a><br>
+                    <a href="../quiz_dom.html">Perguntas</a><br>
                     </li>
                 </ul>
             </ul>
@@ -130,17 +132,30 @@
             </div>
         </div>
     
-        <div class="menu-lateral-closed btn-menu-hidden"><img src="./img/mobile.png" alt=""></div>
+        <div class="menu-lateral-closed btn-menu-hidden"><img src="../img/mobile.png" alt=""></div>
 
 <div class="container">
 
-    <div class="central-text" style="text-align: justify; padding-top: 40px; padding-left: 90px; padding-right: 90px;">
+    <div class="image-container">
+        <img src="../img/Laboratorio XSS DOM-Ataque Base.png" alt="">
+    </div>
 
-        <h2>Bem vindo Cliente.</h2>
-        <p>Clique no link abaixo para ver o produto pedido.</p>
+    <div class="robot_speech d-inline-flex align-items-center justify-content-center">
+        <img src="../img/balao.png" alt="" width="300px" height="150px">
+        <p class="writer">Agora, sem apertar enter, irei inserir, após o "?data=", o script que já conhecemos: "alert("XSSAttack")"</p>
+    </div>
 
-        <a href="./commentsProduct.php?id=3">Ver meu produto agora!</a>
+    <div class="robot d-inline-flex align-items-center justify-content-center">
+        <img src="../img/robot.png" alt="" width="200px" height="200px">
+    </div>
 
+    <div class="container buttons">
+        <div class="btn btn-primary">
+            <a href="./lab1-dom3.html" style="color: white; text-decoration: none;"> &larr; Anterior</a>
+        </div>
+        <div class="btn btn-primary">
+            <a href="./lab1-dom5.html" style="color: white; text-decoration: none;">Próximo &rarr; </a>
+        </div>
     </div>
 
 </div>
@@ -151,17 +166,6 @@ const typewriters = document.querySelectorAll('.writer');
 //const button = document.querySelectorAll('.button_next');
 var cursor = document.createElement('span');
 cursor.id = 'cursor';
-
-window.onload = function() {
-            // Extração do parâmetro 'data' da URL
-            var userData = new URLSearchParams(window.location.search).get('data');
-            if(userData) {
-                // Execução insegura do conteúdo de 'data' como código
-                eval(userData);
-            }
-
-
-        }
 
 function typeParagraph(index) {
     const typewriter = typewriters[index];
@@ -200,6 +204,7 @@ typeParagraph(0);
 
 
 </script>
-<script src="./js/menuLateral.js"></script>
+<script src="../js/menuLateral.js"></script>
 </body>
 </html>
+

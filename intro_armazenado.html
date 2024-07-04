@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/menu.css" rel="stylesheet">
     <link href="./css/fonts.css" rel="stylesheet">
-    <link href="./css/index_general.css" rel="stylesheet">
-    <link href="./css/tutorial_lab.css" rel="stylesheet">
+    <link href="./css/levels_selection.css" rel="stylesheet">
+    <link href="./css/tutorial_before_lab.css" rel="stylesheet">
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.js"></script>
@@ -16,49 +16,38 @@
     <script src="./js/bootstrap.bundle.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <script src="./js/bootstrap.min4.5.js"></script>
-        
-    <title>Loja Hackers do Bem</title>
-
+    <title>XSS Armazenado</title>
 </head>
+
+<style>
+
+    .container{
+        text-align: center;
+    }
+
+    .buttons{
+        margin-top: 60px;
+    }
+
+    .btn{
+        margin-right: 50px;
+        padding: 5px 20px;
+        color: white;
+    }
+
+    .robot{
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+
+
+</style>
+
 <body>
+    
+    <div style="display: flex; width: 100%;">
 
-    <?php include './header.html'; ?>
-
-    <!-- Modal -->
-  <div class="modal fade" id="meuModal" tabindex="-1" role="dialog" aria-labelledby="meuModalLabel" aria-hidden="true" style="align-items: center; display: none;">
-    <div style="height: 100vh; display: flex; align-items: center;">
-      <div style="width: 100vw; display: flex; flex-direction:column; align-items: center; justify-content: center;">
-        <div class="modal-dialog" style="display: flex;">
-                  <div class="text-tutorial">
-                      <p>Esse é o nosso ambiente de laboratório! Esse local é destinado à praticarmos tudo o que você aprendeu.
-        Tenha muita atenção aos próximos passos.  Primeiramente irei demonstrar como o XSS Refletido funciona e, posteiormente, você estará livre para testá-lo! </p>
-                  </div>
-        
-                  <div class="img-tutorial"><img src="./img/robot.png" alt="" style="width: 170px;"></div>
-
-        </div>
-        
-        <button type="button" class="close btn-modal" onclick="closeModal()" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">Entendi</span>
-        </button> 
-
-      </div>
-      
-        
-      </div>  
-  </div>
-
-
-
-  <button type="button" class="btn btn-flutuante" id="btn-flutuante">
-    <span class="d-inline-block btn-flutuante" tabindex="0" data-bs-toggle="popover" data-bs-container="body" data-bs-trigger="hover focus" data-bs-content="Acesse o tutorial aqui" data-bs-placement="top">
-      <img src="./img/robot.png" alt="Robô" style="width: 100px;">
-    </span>
-  </button>
-
-  <div style="display: flex; width: 100%;">
-
-<div class="menu-lateral" id="menu-lateral">
+        <div class="menu-lateral" id="menu-lateral">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="./img/levels.png" alt="">Iniciante
@@ -135,112 +124,93 @@
                     </li>
                 </ul>
             </ul>
+    
+            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 25%"></div>
+            </div>
+        </div>
+    
+        <div class="menu-lateral-closed btn-menu-hidden"><img src="./img/mobile.png" alt=""></div>
 
-    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-success" style="width: 25%"></div>
+<div class="container">
+
+    <div class="central-text" style="text-align: justify; padding-top: 40px; padding-left: 90px; padding-right: 90px;">
+
+        <h3>XSS Armazenado</h3>
+
+        <p>No XSS armazenado, o atacante gera um código malicioso que será armazenado persistentemente em um servidor vulnerável, geralmente através de um banco de dados. Um exemplo deste tipo de ataque pode ser encontrado em aplicações Web que servem como fóruns de discussão ou redes sociais. 
+        </p>
+
+        <p>Este tipo de ataque não necessita um URL para que seja executado e pode afetar um número maior de usuários, visto que qualquer usuário que navegue pela aplicação Web pode executar o código malicioso servido pela página comprometida. Este tipo de ataque pode não só ter o objetivo de prejudicar o usuário legítimo que está navegando pela página Web, mas também, de alguma forma, prejudicar o servidor Web e as aplicações que estão mantendo a determinada página ativa.
+        </p>
+
+        <p>Além de o código malicioso inserido na página poder ser utilizado para tentar coletar informações dos usuários legítimos que a estão acessando ou redirecionar estes usuários para outra página Web criada pelo atacante, também é possível que o código tenha como objetivo coletar informações armazenadas no servidor que hospeda a página, como informações de usuários cadastrados na página ou informações de login e senha para acesso administrativo ao servidor.
+        </p>
+
     </div>
+
+    <!-- <div class="robot_speech d-inline-flex align-items-center justify-content-center">
+        <img src="../img/balao.png" alt="" width="300px" height="80px">
+        <p class="writer">Vamos revisitar o ataque de redirecionamento? </p>
+    </div> -->
+
+    <!-- <div class="robot d-inline-flex align-items-center justify-content-center">
+        <img src="./img/robot.png" alt="" width="180px" height="180px">
+    </div> -->
+
+    <div class="container buttons">
+        <div class="btn btn-primary">
+            <a href="./tutoriais/lab1-armazenado1.html" style="color: white; text-decoration: none;"> Entendido </a>
+        </div>
+    </div>
+
 </div>
 
-<div class="menu-lateral-closed btn-menu-hidden"><img src="./img/mobile.png" alt=""></div>
-
-        <div id="content" class="content">
-            
-            <?php include 'getProducts.php'; ?>
-
-        </div>
-
-    </div>
-    
-    
-    <script src="./js/menuLateral.js"></script>
-</body>
 
 <script>
+const typewriters = document.querySelectorAll('.writer');
+//const button = document.querySelectorAll('.button_next');
+var cursor = document.createElement('span');
+cursor.id = 'cursor';
 
-var referrer = document.referrer;
-var path = new URL(referrer).pathname;
+function typeParagraph(index) {
+    const typewriter = typewriters[index];
+    const text = typewriter.textContent;
+    let charIndex = 0;
+    typewriter.textContent = '';
+    typewriter.style.display = 'block';
 
-var btnF = document.getElementById('btn-flutuante');
-var modal = document.getElementById('meuModal');
+    function typeCharacter() {
+        typewriter.textContent += text[charIndex];
+        typewriter.appendChild(cursor);
+        charIndex++;
 
-function closeModal(){
-    modal.style.display = "None";
-    $('#meuModal').modal('hide');
-}
+        if (charIndex < text.length) {
+            setTimeout(typeCharacter, 30); 
+        } else {
 
-function openModal(){
-    modal.style.display = "Flex";
-    $('#meuModal').modal('show');
-}
-
-btnF.addEventListener('click', function () {
-    openModal();
-});
-
-$(document).ready(function(){
-    if (path == "/menu.html"){
-      console.log(path);
-      openModal();
+            setTimeout(() => {
+                if (index < typewriters.length - 1) {
+                    typeParagraph(index + 1);
+                } else {
+                    //button[0].style.display = 'block';
+                }
+            }, 0);
+        }
     }
-});
 
-const items = document.querySelectorAll('.carousel-item');
-let currentIndex = 0;
-let lastIndex = 0;
+    typeCharacter();
 
-function restartInterval() {
-
-  clearInterval(intervalId);
-
-  intervalId = setInterval(nextSlide, 4000);
-}
-
-
-function updateCarousel() {
-
-    items[lastIndex].classList.remove("active");
     
-    items[currentIndex].classList.add("active");
-  
-    restartInterval();
-
 }
 
-function nextSlide() {
+typeParagraph(0);
 
-  lastIndex = currentIndex;
-  if (currentIndex == items.length-1){
-    currentIndex = 0;
-  } else {
-    currentIndex = currentIndex + 1;
-  }
-  
-  updateCarousel();
-  
-}
 
-let intervalId = setInterval(nextSlide, 4000);
 
-function prevSlide() {
-  lastIndex = currentIndex;
-  if (currentIndex == 0){
-    currentIndex = items.length-1;
-  } else {
-    currentIndex = currentIndex - 1;
-  }
-  
-  updateCarousel();
-  
-}
-
-function toggleMenu() {
-  var navbarNav = document.getElementById("navbarTogglerDemo03");
-  navbarNav.classList.toggle("show");
-}
-
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 </script>
-
+<script src="./js/menuLateral.js"></script>
+</body>
 </html>
+

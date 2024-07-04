@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/menu.css" rel="stylesheet">
     <link href="./css/fonts.css" rel="stylesheet">
-    <link href="./css/index_general.css" rel="stylesheet">
-    <link href="./css/tutorial_lab.css" rel="stylesheet">
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.js"></script>
@@ -16,49 +14,41 @@
     <script src="./js/bootstrap.bundle.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <script src="./js/bootstrap.min4.5.js"></script>
-        
-    <title>Loja Hackers do Bem</title>
-
+    <title>Quiz XSS Refletido</title>
 </head>
+
+<style>
+
+    .container{
+        text-align: center;
+    }
+
+    .buttons{
+        margin-top: 60px;
+    }
+
+    .btn{
+        margin-right: 50px;
+        padding: 5px 20px;
+        color: white;
+    }
+
+    .robot{
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+
+    .correct { color: green; }
+    .incorrect { color: red; }
+
+
+</style>
+
 <body>
+    
+    <div style="display: flex; width: 100%;">
 
-    <?php include './header.html'; ?>
-
-    <!-- Modal -->
-  <div class="modal fade" id="meuModal" tabindex="-1" role="dialog" aria-labelledby="meuModalLabel" aria-hidden="true" style="align-items: center; display: none;">
-    <div style="height: 100vh; display: flex; align-items: center;">
-      <div style="width: 100vw; display: flex; flex-direction:column; align-items: center; justify-content: center;">
-        <div class="modal-dialog" style="display: flex;">
-                  <div class="text-tutorial">
-                      <p>Esse é o nosso ambiente de laboratório! Esse local é destinado à praticarmos tudo o que você aprendeu.
-        Tenha muita atenção aos próximos passos.  Primeiramente irei demonstrar como o XSS Refletido funciona e, posteiormente, você estará livre para testá-lo! </p>
-                  </div>
-        
-                  <div class="img-tutorial"><img src="./img/robot.png" alt="" style="width: 170px;"></div>
-
-        </div>
-        
-        <button type="button" class="close btn-modal" onclick="closeModal()" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">Entendi</span>
-        </button> 
-
-      </div>
-      
-        
-      </div>  
-  </div>
-
-
-
-  <button type="button" class="btn btn-flutuante" id="btn-flutuante">
-    <span class="d-inline-block btn-flutuante" tabindex="0" data-bs-toggle="popover" data-bs-container="body" data-bs-trigger="hover focus" data-bs-content="Acesse o tutorial aqui" data-bs-placement="top">
-      <img src="./img/robot.png" alt="Robô" style="width: 100px;">
-    </span>
-  </button>
-
-  <div style="display: flex; width: 100%;">
-
-<div class="menu-lateral" id="menu-lateral">
+        <div class="menu-lateral" id="menu-lateral">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="./img/levels.png" alt="">Iniciante
@@ -135,112 +125,117 @@
                     </li>
                 </ul>
             </ul>
+    
+            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 25%"></div>
+            </div>
+        </div>
+    
+        <div class="menu-lateral-closed btn-menu-hidden"><img src="./img/mobile.png" alt=""></div>
 
-    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-success" style="width: 25%"></div>
+<div class="container">
+
+    <div class="central-text" style="text-align: justify; padding-top: 40px; padding-left: 90px; padding-right: 90px;">
+
+        <h5>Baseado em seus conhecimentos sobre XSS Refletido, diga se as afirmações são verdadeiras ou falsas:</h5>
+        <br>
+
+        <form id="questionnaireForm">
+            <div>
+                <h6><mark>O ataque fica armazenado na memória do site.</mark></h6>
+                <label>
+                    <input type="radio" name="Pergunta1" value="Verdadeiro"> Verdadeiro
+                </label><br>
+                <label>
+                    <input type="radio" name="Pergunta1" value="Falso" required> Falso
+                </label>
+            </div>
+            <br>
+            <div>
+                <h6><mark>O ataque passa pelo site antes de chegar ao usuário.</mark></h6>
+                <label>
+                    <input type="radio" name="Pergunta2" value="Verdadeiro" required> Verdadeiro
+                </label><br>
+                <label>
+                    <input type="radio" name="Pergunta2" value="Falso"> Falso
+                </label>
+            </div>
+            <br>
+            <div>
+                <h6><mark>É possível sofrer esse ataque apenas por acessar um link para um site vulnerável</mark></h6>
+                <label>
+                    <input type="radio" name="Pergunta3" value="Verdadeiro" required> Verdadeiro
+                </label><br>
+                <label>
+                    <input type="radio" name="Pergunta3" value="Falso"> Falso
+                </label>
+            </div>
+            <br>
+            <div>
+                <h6><mark>É impossível sofrer danos sérios, como ter suas senhas roubadas, devido a esse tipo de ataque</mark></h6>
+                <label>
+                    <input type="radio" name="Pergunta4" value="Verdadeiro"> Verdadeiro
+                </label><br>
+                <label>
+                    <input type="radio" name="Pergunta4" value="Falso" required> Falso
+                </label>
+            </div>
+        
+            <br>
+            <input type="submit" value="Checar Respostas">
+        </form>
+
+        <div id="results"></div>
+
     </div>
+
+    <div class="container buttons">
+        <div class="btn btn-primary">
+            <a href="./intro_armazenado.html" style="color: white; text-decoration: none;"> Finalizado </a>
+        </div>
+    </div>
+
 </div>
 
-<div class="menu-lateral-closed btn-menu-hidden"><img src="./img/mobile.png" alt=""></div>
 
-        <div id="content" class="content">
-            
-            <?php include 'getProducts.php'; ?>
-
-        </div>
-
-    </div>
-    
-    
-    <script src="./js/menuLateral.js"></script>
-</body>
 
 <script>
+    document.getElementById('questionnaireForm').addEventListener('submit', function(event) {
+        event.preventDefault();
 
-var referrer = document.referrer;
-var path = new URL(referrer).pathname;
+        const correctAnswers = {
+            Pergunta1: 'Falso',
+            Pergunta2: 'Verdadeiro',
+            Pergunta3: 'Verdadeiro',
+            Pergunta4: 'Falso'
+        };
 
-var btnF = document.getElementById('btn-flutuante');
-var modal = document.getElementById('meuModal');
+        let resultsHtml = '<br><h5>Resultados</h5>';
+        let score = 0;
 
-function closeModal(){
-    modal.style.display = "None";
-    $('#meuModal').modal('hide');
-}
+        for (let question in correctAnswers) {
+            const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`).value;
+            if (selectedAnswer === correctAnswers[question]) {
+                resultsHtml += `<p class="correct">${question.replace('question', 'Question ')}: Resposta correta!</p>`;
+                score++;
+            } else {
+                resultsHtml += `<p class="incorrect">${question.replace('question', 'Question ')}: Não, a resposta correta é ${correctAnswers[question]}.</p>`;
+            }
+        }
 
-function openModal(){
-    modal.style.display = "Flex";
-    $('#meuModal').modal('show');
-}
+        resultsHtml += `<p>`;
+            
+        if(score >= 1){
+            resultsHtml += `Parabéns! `
+        }
 
-btnF.addEventListener('click', function () {
-    openModal();
-});
+        resultsHtml += `Você acertou ${score} / 4 questões.</p>`;
 
-$(document).ready(function(){
-    if (path == "/menu.html"){
-      console.log(path);
-      openModal();
-    }
-});
-
-const items = document.querySelectorAll('.carousel-item');
-let currentIndex = 0;
-let lastIndex = 0;
-
-function restartInterval() {
-
-  clearInterval(intervalId);
-
-  intervalId = setInterval(nextSlide, 4000);
-}
-
-
-function updateCarousel() {
-
-    items[lastIndex].classList.remove("active");
-    
-    items[currentIndex].classList.add("active");
-  
-    restartInterval();
-
-}
-
-function nextSlide() {
-
-  lastIndex = currentIndex;
-  if (currentIndex == items.length-1){
-    currentIndex = 0;
-  } else {
-    currentIndex = currentIndex + 1;
-  }
-  
-  updateCarousel();
-  
-}
-
-let intervalId = setInterval(nextSlide, 4000);
-
-function prevSlide() {
-  lastIndex = currentIndex;
-  if (currentIndex == 0){
-    currentIndex = items.length-1;
-  } else {
-    currentIndex = currentIndex - 1;
-  }
-  
-  updateCarousel();
-  
-}
-
-function toggleMenu() {
-  var navbarNav = document.getElementById("navbarTogglerDemo03");
-  navbarNav.classList.toggle("show");
-}
-
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-
+        document.getElementById('results').innerHTML = resultsHtml;
+    });
 </script>
 
+
+<script src="./js/menuLateral.js"></script>
+</body>
 </html>
