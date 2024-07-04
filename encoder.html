@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vamos fazer o URL Encoder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #encodedText {
+            word-wrap: break-word;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> URL Encoder</h1>
+        <h2> Vamos colar o codigo e vamos codificar com o encoder</h2>
+        <textarea id="inputText" placeholder="Enter text to encode..."></textarea>
+        <br>
+        <button onclick="encodeURL()">Encode</button>
+        <h2> Depois de feito o encoder, vamos clicar em Copy </h2>
+        <button onclick="copyToClipboard()">Copy</button>
+        <div id="encodedText"></div>
+    </div>
+    <script>
+        function encodeURL() {
+            var input = document.getElementById("inputText").value;
+            var encoded = encodeURIComponent(input);
+            document.getElementById("encodedText").textContent = encoded;
+        }
+
+        function copyToClipboard() {
+            var encodedText = document.getElementById("encodedText").textContent;
+            var tempInput = document.createElement("textarea");
+            tempInput.value = encodedText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("Encoded text copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
+

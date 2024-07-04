@@ -1,0 +1,133 @@
+.nav-item, .nav-link{
+    display: block;
+}
+
+.menu-lateral {
+    top: 0;
+    left: 0;
+    width: 20vw;
+    background-color: hsl(245, 67%, 24%);
+    color: white;
+    padding: 20px;
+    display: block;
+    height: 100vmax;
+    overflow-y: auto;
+}
+div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+div ul li {
+    margin-bottom: 10px;
+}
+div ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-container{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.btn-container button{
+    background-color: hsl(245, 67%, 24%);
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 12px;
+    font-size: 12px;
+}
+.btn-container button:focus{
+    background-color: hsl(245, 27%, 34%);
+}
+
+.img-logo{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+    height: auto;
+}
+
+.ul-subitem{
+    margin-bottom: 10px;
+}
+
+.nav-subitem{
+    padding-left: 25px;
+}
+
+.close-btn{
+    width: 100%;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+}
+
+.close-btn img{
+    width: 25px;
+}
+
+.close-btn img:hover{
+    cursor: pointer;
+    width: 26px;
+}
+
+.btn-menu-hidden{
+
+    background-color: hsl(245, 67%, 24%);
+    color: #FAFAFA;
+
+}
+
+.menu-lateral-closed {
+    top: 0;
+    left: 0;
+    width: 5vw;
+    height: 100vmax;
+    background-color: hsl(245, 67%, 24%);
+    color: white;
+    padding: 20px;
+
+}
+
+.menu-lateral-closed img{
+    width: 25px;
+}
+
+.menu-lateral-closed img:hover{
+    cursor: pointer;
+    width: 26px;
+}
+
+.levels_line {
+    color: black;
+    border-width: 3px;
+}
+
+.dropdown{
+    font-family: 'Itim', fallback, sans-serif;
+}
+
+
+.dropdown img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.dropdown button{
+    background-color: transparent;
+    border: none;
+}
+
+.content {
+    /* margin: 30px; */
+    /* margin-left: 20%; /* ajuste para o espaço ocupado pelo menu lateral */
+    padding: 20px;
+    width: 80vw;
+}

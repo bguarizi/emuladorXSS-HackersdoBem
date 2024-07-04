@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+    <title>Bem vindo Membro, realize o LOGIN.</title>
+</head>
+<body>
+    <h2>Bem vindo Cliente.</h2>
+    <p>Clique no link abaixo para ver o produto pedido.</p>
+
+    <script>
+        window.onload = function() {
+            // Extração do parâmetro 'data' da URL
+            var userData = new URLSearchParams(window.location.search).get('data');
+            if(userData) {
+                // Execução insegura do conteúdo de 'data' como código
+                eval(userData);
+            }
+
+
+        }
+    </script>
+<a href="./commentsProduct.php?id=3">Ver meu produto agora!</a>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo preta com 50% de transparência */
+    border: none; /* Remova a borda */
+    box-shadow: none; /* Remova a sombra */
+}
+
+/* Estilize o botão de fechar */
+.modal-header .close {
+    color: white; /* Cor do ícone de fechar */
+    opacity: 1; /* Mantenha o ícone de fechar visível */
+}
+
+.text-tutorial{
+    color: white;
+    width: 50%;
+}
+
+.btn-modal{
+    border: none;
+    border-radius: 10px;
+    padding: 7px 12px;
+}
+

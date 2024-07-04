@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'JotiOne-Regular';
+    src: url(../fonts/Joti_One/JotiOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Jost-Light';
+    src: url(../fonts/Jost/static/Jost-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url(../fonts/Jost/static/Jost-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Itim';
+    src: url(../fonts/Itim/Itim-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(../fonts/Inter/static/Inter-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf) format('truetype');
+}
