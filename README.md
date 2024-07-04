@@ -123,7 +123,7 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
 
     Para as perguntas seguintes a esta, selecione "Y" ou "y" em todas para aceitar.
 
-6. Acesse seu mysql para verificar se a senha foi configurada corretamente:
+6. Acesse seu mysql para verificar se foi configurado corretamente:
 
     Digite o comando:
 
@@ -131,15 +131,19 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     sudo mysql -u root -p
     ```
 
-    Pressione Enter. Caso seu acesso ao mysql tenha sido executado, as configurações foram realizadas corretamente.
+    Pressione Enter. Caso seu acesso ao mysql tenha sido executado, as configurações foram realizadas corretamente. Caso opte por escolher uma senha ao invés da autenticação padrão, use o comando:
 
+   ```bash
+   ALTER USER 'root'@'localhost' IDENTIFIED BY 'NovaSenha';
+   ```
+    
     Para sair do mysql digite:
 
     ```bash
     exit
     ```
 
-7. Faça download do PHP:
+8. Faça download do PHP:
 
     Digite o seguinte comando:
 
@@ -161,7 +165,7 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     sudo service apache2 restart
     ```
 
-8. Faça download do projeto GT-EXSS a partir do Github:
+9. Faça download do projeto GT-EXSS a partir do Github:
 
     Entre na pasta Downloads:
 
@@ -174,12 +178,12 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     git clone https://github.com/bguarizi/emuladorXSS-HackersdoBem
     ```
 
-9. Recrie a base de dados do projeto no mysql:
+10. Recrie a base de dados do projeto no mysql:
 
     Execute o comando de criação da base de dados e digite sua senha:
 
     ```bash
-    mysql -u root -p < emuladorXSS-HackersdoBem/databases/database.sql
+    sudo mysql -u root -p < emuladorXSS-HackersdoBem/database/database.sql
     ```
 
     Execute o comando para verificar se a base de dados "lojaXss" foi criada:
@@ -205,7 +209,7 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     cd ../../
     ```
 
-10. Mova toda a pasta do projeto para a pasta padrão do sistema:
+11. Mova toda a pasta do projeto para a pasta padrão do sistema:
 
     Apague a pasta html:
 
@@ -216,10 +220,10 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     Digite o comando:
 
     ```bash
-    sudo mv emuladorXSS-HackersdoBem /var/ww/html
+    sudo mv emuladorXSS-HackersdoBem /var/www/html
     ```
 
-11. Recarregue o seu Apache2 e acesse o nevagador:
+12. Recarregue o seu Apache2 e acesse o nevagador:
 
     ```bash
     sudo service apache2 restart
