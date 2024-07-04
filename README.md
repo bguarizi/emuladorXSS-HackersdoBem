@@ -1,6 +1,6 @@
 # Hackers do Bem - GT-EXSS
 
-Este repositório está vinculado ao artigo "Um Emulador Educativo de Ataques Cross-Site Scripting". O artigo foi publicado no Salão de Ferramenta da 24º edição do Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais.
+Este repositório está vinculado ao artigo "Um Emulador Educativo de Ataques Cross-Site Scripting". O artigo foi submetido no Salão de Ferramenta da 24º edição do Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais.
 
 Resumo: Este trabalho propõe um emulador de ataques Cross-Site Scripting (XSS) para o aprendizado prático em cibersegurança. O emulador permite que usuários identifiquem sítios Web vulneráveis a ataques XSS em um ambiente controlado. A identificação de vulnerabilidades se dá pela realização de atividades que são compostas por uma introdução teórica sobre o assunto da atividade, seguida de procedimentos práticos para a realização de testes de vulnerabilidade XSS em um servidor Web executado em uma máquina virtual. Ao fim da atividade, o usuário recebe sugestões de melhorias para corrigir as vulnerabilidades XSS dessa atividade. São desenvolvidas atividades para diferentes níveis de conhecimento. A particularidade do emulador proposto é a sua abordagem educativa e seu objetivo é conscientizar alunos de graduação e profissionais de TI a desenvolver sítios Web menos vulneráveis.
 
