@@ -188,7 +188,7 @@ Esta seção é uma demontração de como configurar todo o ambiente do projeto 
     Execute o comando de criação da base de dados e digite sua senha:
 
     ```bash
-    mysql -u root -p < nomedapastagtexss/databases/database.sql
+    mysql -u root -p < emuladorXSS-HackersdoBem/databases/database.sql
     ```
 
     Execute o comando para verificar se a base de dados "lojaXss" foi criada:
@@ -225,7 +225,7 @@ Esta seção é uma demontração de como configurar todo o ambiente do projeto 
     Digite o comando:
 
     ```bash
-    sudo mv nomedapastagtexss /var/ww/html
+    sudo mv emuladorXSS-HackersdoBem /var/ww/html
     ```
 
 11. Recarregue o seu Apache2 e acesse o nevagador:
