@@ -180,7 +180,7 @@ Esta seção é uma demontração de como configurar todo o ambiente do projeto 
     Clone o repositório do projeto:
 
     ```bash
-    git clone https://gtexssurl.com
+    git clone https://github.com/bguarizi/emuladorXSS-HackersdoBem.git
     ```
 
 9. Recrie a base de dados do projeto no mysql:
