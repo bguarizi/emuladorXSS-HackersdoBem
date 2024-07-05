@@ -4,8 +4,19 @@ Este repositório está vinculado ao artigo "Um Emulador Educativo de Ataques Cr
 
 Resumo: Este trabalho propõe um emulador de ataques Cross-Site Scripting (XSS) para o aprendizado prático em cibersegurança. O emulador permite que usuários identifiquem sítios Web vulneráveis a ataques XSS em um ambiente controlado. A identificação de vulnerabilidades se dá pela realização de atividades que são compostas por uma introdução teórica sobre o assunto da atividade, seguida de procedimentos práticos para a realização de testes de vulnerabilidade XSS em um servidor Web executado em uma máquina virtual. Ao fim da atividade, o usuário recebe sugestões de melhorias para corrigir as vulnerabilidades XSS dessa atividade. São desenvolvidas atividades para diferentes níveis de conhecimento. A particularidade do emulador proposto é a sua abordagem educativa e seu objetivo é conscientizar alunos de graduação e profissionais de TI a desenvolver sítios Web menos vulneráveis.
 
-Você pode encontrar um vídeo de demonstração das páginas da ferramenta aqui: https://drive.google.com/drive/folders/1P-I-tWrgNDREgSetLyICa3e28z4hrqby
+Você pode encontrar um vídeo de demonstração das páginas da ferramenta aqui:
 
+- Opção 1 (Através da página do projeto):
+
+    ```bash
+   http://www.midiacom.uff.br/gt-exss/
+    ```
+
+- Opção 2 (Através do link do Google Drive):
+
+    ```bash
+   https://drive.google.com/drive/folders/1P-I-tWrgNDREgSetLyICa3e28z4hrqby
+    ```
 
 ## Tópicos
 
@@ -26,7 +37,21 @@ Para instalar o projeto, siga estes passos:
     ```
 Acesse as instruções de instalação através do link acima de acordo com o sistema operacional que possui em sua máquina. 
 
-2. Faça download da nossa máquina virtual através do link:
+2. Faça download da nossa máquina virtual:
+
+    Opção 1 (Através da página do projeto):
+
+    Acesse o link abaixo:
+
+    ```bash
+   http://www.midiacom.uff.br/gt-exss/
+    ```
+
+    Role a página e clique no botão "Download" e prossiga com o download.
+
+    Opção 2 (Através do link do Google Drive):
+
+    Acesse o link abaixo:
 
    ```bash
    https://drive.google.com/drive/folders/1Dpi8TWZnwcbUaoh97W8wuYgVQ6S_fajf
