@@ -4,6 +4,8 @@ Este repositório está vinculado ao artigo "Um Emulador Educativo de Ataques Cr
 
 Resumo: Este trabalho propõe um emulador de ataques Cross-Site Scripting (XSS) para o aprendizado prático em cibersegurança. O emulador permite que usuários identifiquem sítios Web vulneráveis a ataques XSS em um ambiente controlado. A identificação de vulnerabilidades se dá pela realização de atividades que são compostas por uma introdução teórica sobre o assunto da atividade, seguida de procedimentos práticos para a realização de testes de vulnerabilidade XSS em um servidor Web executado em uma máquina virtual. Ao fim da atividade, o usuário recebe sugestões de melhorias para corrigir as vulnerabilidades XSS dessa atividade. São desenvolvidas atividades para diferentes níveis de conhecimento. A particularidade do emulador proposto é a sua abordagem educativa e seu objetivo é conscientizar alunos de graduação e profissionais de TI a desenvolver sítios Web menos vulneráveis.
 
+Você pode encontrar um vídeo de demonstração das páginas da ferramenta aqui: https://drive.google.com/drive/folders/1P-I-tWrgNDREgSetLyICa3e28z4hrqby
+
 
 ## Tópicos
 
@@ -15,42 +17,40 @@ Resumo: Este trabalho propõe um emulador de ataques Cross-Site Scripting (XSS) 
 
 Para instalar o projeto, siga estes passos:
 
-1. Realize a instalação do VirtualBox ou VMWare:
+1. Realize a instalação do VirtualBox:
 
     VirtualBox:
 
     ```bash
     https://www.virtualbox.org/wiki/Downloads
     ```
-    VMWare:
+Acesse as instruções de instalação através do link acima de acordo com o sistema operacional que possui em sua máquina. 
 
-    ```bash
-    https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html.html.html.html
-    ```
-Acesse as instruções de instalação através dos links acima de acordo com o sistema operacional que possui em sua máquina. 
-
-2. Faça download da nossa máquina virtual através do site:
+2. Faça download da nossa máquina virtual através do link:
 
    ```bash
-   https://pegueoprojetoaqui.com.br
+   https://drive.google.com/drive/folders/1Dpi8TWZnwcbUaoh97W8wuYgVQ6S_fajf
     ```
-   - Acesse a aba "Máquina Virtual"
-   - Clique em "Fazer Download"
+   - Dê um duplo clique no arquivo "lubuntu_gtexss.zip" e clique para fazer download
+   
 
-   Isto irá iniciar o processo de download da nossa máquina virtual
+   Isto irá iniciar o processo de download da nossa máquina virtual.
 
 3. Adicione a máquina virtual ao gerenciador instalado (VirtualBox ou VMWare):
 
-   - Descrever esses passos
+   - Após o download ser concluído, extraia o arquivo zip baixado
+   - Em seguida, dê um duplo clique no arquivo "lubuntu_gtxss.vbox" para abri-lo no VirtualBox
+
+   Isto irá adicionar nossa máquina virtual ao VirtualBox.
 
 
 ## Uso
 
 Após a instalação ter sido realizada corretamente, você está pronto para acessar o nosso conteúdo:
 
-1. Ligue a máquina virtual
+1. Ligue a máquina virtual daso um duplo clique na máquina "lubuntu_gtxss" que aparecerá no VirtualBox
 2. Abra o navegador Firefox
-3. Digite na barra de busca na parte superior da tela "127.0.0.1"
+3. Caso não seja redirecionado automaticamente, digite na barra de busca na parte superior da tela "127.0.0.1"
 
 E pronto, você já está acessando o nosso conteúdo localmente em sua própria máquina. Aproveite! Bons Estudos.
 

@@ -43,84 +43,90 @@
 
     <div style="display: flex; width: 100%;">
 
-    <div class="menu-lateral" id="menu-lateral">
-    	<div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="./img/levels.png" alt="">Iniciante
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Intermediário</button>
-                <button class="dropdown-item" type="button">Avançado</button>
+<div class="menu-lateral" id="menu-lateral">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./img/levels.png" alt="">Iniciante
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Intermediário</button>
+                    <button class="dropdown-item" type="button">Avançado</button>
+                </div>
             </div>
-        </div>
-
-        <hr class="levels_line mt-1 mb-3">
-
-        <button type="button" class="close-btn">
-            <img src="./img/close-btn.png" onclick="close_menu()"></img>
-        </button>
-
-        <div class="img-div">
-        	<img src="./img/logo_oficial_branca.svg" class="img-logo"></img>
-        </div>
-
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Página Inicial</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Introdução</a>
-            </li>
-            <li class="nav-item" type="button" data-toggle="collapse" data-target="#XssRef" aria-expanded="false" aria-controls="opcoes">
-                <a class="nav-link active" aria-current="page" href="#">XSS Refletido</a>
-            </li>
-            <ul class="collapse ul-subitem" id="XssRef">
-                <li class="nav-subitem">
-                <a href="#">Introdução</a><br>
+    
+            <hr class="levels_line mt-1 mb-3">
+    
+            <button type="button" class="close-btn">
+                <img src="./img/close-btn.png" onclick="close_menu()"></img>
+            </button>
+    
+            <div class="img-div">
+                <img src="./img/logo_oficial_branca.svg" class="img-logo"></img>
+            </div>
+    
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="./intro.html">Introdução</a>
                 </li>
-                <li class="nav-subitem">
-                <a href="#">Como funciona</a><br>
+                <li class="nav-item" type="button" data-toggle="collapse" data-target="#XssRef" aria-expanded="false" aria-controls="opcoes">
+                    <a class="nav-link active" aria-current="page" href="#">XSS Refletido</a>
                 </li>
-                <li class="nav-subitem">
-                <a href="./laboratory.php">Laboratório</a><br>
+                <ul class="collapse ul-subitem" id="XssRef">
+                    <li class="nav-subitem">
+                    <a href="./intro_refletido.html">Introdução</a><br>
+                    </li>
+                    <li class="nav-subitem">
+                    <a href="./tutoriais/lab1-refletido1.html">Laboratório 1</a><br>
+                    </li>
+                    <li class="nav-subitem">
+                    <a href="./tutoriais/lab2-refletido1.html">Laboratório 2</a><br>
+                    </li>
+                    <li class="nav-subitem">
+                    <a href="./quiz_refletido.html">Perguntas</a><br>
+                    </li>
+                </ul>
+                <li class="nav-item" type="button" data-toggle="collapse" data-target="#xssarm" aria-expanded="false" aria-controls="opcoes">
+                    <a class="nav-link active" aria-current="page" href="#">XSS Armazenado</a>
                 </li>
+                <ul class="collapse ul-subitem" id="xssarm">
+                    <li class="nav-subitem">
+                    <a href="./intro_armazenado.html">Introdução</a><br>
+                    </li>
+                    <li class="nav-subitem">
+                    <a href="./tutoriais/lab1-armazenado1.html">Laboratório 1</a><br>
+                    </li>
+                    <li class="nav-subitem">
+                    <a href="./tutoriais/lab2-armazenado1.html">Laboratório 2</a><br>
+                    </li>
+                    <li class="nav-subitem">
+                    <a href="./quiz_armazenado.html">Perguntas</a><br>
+                    </li>
+                </ul>
+                <li class="nav-item" type="button" data-toggle="collapse" data-target="#xssdom" aria-expanded="false" aria-controls="opcoes">
+                    <a class="nav-link active" aria-current="page" href="#">XSS DOM</a>
+                </li>
+                <ul class="collapse ul-subitem" id="xssdom">
+                    <li class="nav-subitem">
+                    <a href="./intro_dom.html">Introdução</a><br>
+                    </li>
+                    <li class="nav-subitem">
+                    <a href="./tutoriais/lab1-dom1.html">Laboratório 1</a><br>
+                    </li>
+                    <li class="nav-subitem">
+                    <a href="./tutoriais/lab2-dom1.html">Laboratório 2</a><br>
+                    </li>
+                    <li class="nav-subitem">
+                    <a href="./quiz_dom.html">Perguntas</a><br>
+                    </li>
+                </ul>
             </ul>
-            <li class="nav-item" type="button" data-toggle="collapse" data-target="#xssarm" aria-expanded="false" aria-controls="opcoes">
-                <a class="nav-link active" aria-current="page" href="#">XSS Armazenado</a>
-            </li>
-            <ul class="collapse ul-subitem" id="xssarm">
-                <li class="nav-subitem">
-                    <a href="#">Introdução</a><br>
-                    </li>
-                    <li class="nav-subitem">
-                    <a href="#">Como funciona</a><br>
-                    </li>
-                    <li class="nav-subitem">
-                    <a href="./laboratory.php">Laboratório</a><br>
-                    </li>
-            </ul>
-            <li class="nav-item" type="button" data-toggle="collapse" data-target="#xssdom" aria-expanded="false" aria-controls="opcoes">
-                <a class="nav-link active" aria-current="page" href="#">XSS DOM</a>
-            </li>
-            <ul class="collapse ul-subitem" id="xssdom">
-                <li class="nav-subitem">
-                    <a href="#">Introdução</a><br>
-                    </li>
-                    <li class="nav-subitem">
-                    <a href="#">Como funciona</a><br>
-                    </li>
-                    <li class="nav-subitem">
-                    <a href="./laboratory.php">Laboratório</a><br>
-                    </li>
-            </ul>
-        </ul>
 
-        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar bg-success" style="width: 25%"></div>
-        </div>
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-success" style="width: 25%"></div>
     </div>
+</div>
 
-    <div class="menu-lateral-closed btn-menu-hidden"><img src="./img/mobile.png" alt=""></div>
+<div class="menu-lateral-closed btn-menu-hidden"><img src="./img/mobile.png" alt=""></div>
 
         <div id="content" class="content">
 
