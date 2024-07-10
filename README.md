@@ -1,10 +1,10 @@
 # Hackers do Bem - GT-EXSS
 
-Este repositório está vinculado ao artigo "Um Emulador Educativo de Ataques Cross-Site Scripting". O artigo foi submetido ao Salão de Ferramenta da 24º edição do Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais.
+Este repositório está vinculado ao artigo "EXSS: Um Emulador Educativo de Ataques Cross-Site Scripting (Código Aberto)". O artigo foi submetido ao Salão de Ferramenta da 24º edição do Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais.
 
-Resumo: Este trabalho propõe um emulador de ataques Cross-Site Scripting (XSS) para o aprendizado prático em cibersegurança. O emulador permite que usuários identifiquem sítios Web vulneráveis a ataques XSS em um ambiente controlado. A identificação de vulnerabilidades se dá pela realização de atividades que são compostas por uma introdução teórica sobre o assunto da atividade, seguida de procedimentos práticos para a realização de testes de vulnerabilidade XSS em um servidor Web executado em uma máquina virtual. Ao fim da atividade, o usuário recebe sugestões de melhorias para corrigir as vulnerabilidades XSS dessa atividade. São desenvolvidas atividades para diferentes níveis de conhecimento. A particularidade do emulador proposto é a sua abordagem educativa e seu objetivo é conscientizar alunos de graduação e profissionais de TI a desenvolver sítios Web menos vulneráveis.
+Resumo: Este artigo propõe um emulador de ataques Cross-Site Scripting (XSS) para o aprendizado em cibersegurança. O emulador permite que usuários identifiquem sítios Web vulneráveis a ataques XSS em um ambiente controlado. A identificação de vulnerabilidades se dá pela realização de atividades que são compostas por uma introdução teórica sobre o assunto da atividade, seguida de procedimentos práticos para a realização de testes de vulnerabilidade XSS em um servidor Web executado em uma máquina virtual. São desenvolvidas atividades para diferentes níveis de conhecimento. A particularidade do emulador proposto é a sua abordagem educativa e seu objetivo é conscientizar alunos de graduação e profissionais a desenvolver sítios Web menos vulneráveis.
 
-Você pode encontrar um vídeo de demonstração das páginas da ferramenta aqui:
+Você pode encontrar um vídeo de demonstração das páginas da ferramenta aqui: 
 
 - Opção 1 (Através da página do projeto):
 
@@ -22,20 +22,20 @@ Você pode encontrar um vídeo de demonstração das páginas da ferramenta aqui
 
 - [Instalação](#instalação)
 - [Uso](#uso)
-- [Como recriar a minha própria máquina virtual do projeto?](#Recriar)
+- [Como recriar a minha própria máquina virtual do projeto?](#Recriação)
 
 ## Instalação
 
 Para instalar o projeto, siga estes passos:
 
-1. Realize a instalação do VirtualBox:
+1. Realize a instalação do software de virtualização VirtualBox:
 
     VirtualBox:
 
     ```bash
     https://www.virtualbox.org/wiki/Downloads
     ```
-Acesse as instruções de instalação através do link acima de acordo com o sistema operacional que possui em sua máquina. 
+Acesse as instruções de instalação através do link apresentado anteriormente de acordo com o sistema operacional que possui em sua máquina. 
 
 2. Faça download da nossa máquina virtual:
 
@@ -61,25 +61,25 @@ Acesse as instruções de instalação através do link acima de acordo com o si
 
    Isto irá iniciar o processo de download da nossa máquina virtual.
 
-3. Adicione a máquina virtual ao gerenciador instalado (VirtualBox ou VMWare):
+3. Adicione a máquina virtual ao gerenciador instalado (VirtualBox):
 
    - Após o download ser concluído, extraia o arquivo zip baixado
+   - Acesse a pasta lubuntu_gtexss e dentro dela acesse a pasta de mesmo nome (lubuntu_gtexss)
    - Em seguida, dê um duplo clique no arquivo "lubuntu_gtxss.vbox" para abri-lo no VirtualBox
 
    Isto irá adicionar nossa máquina virtual ao VirtualBox.
-
 
 ## Uso
 
 Após a instalação ter sido realizada corretamente, você está pronto para acessar o nosso conteúdo:
 
-1. Ligue a máquina virtual daso um duplo clique na máquina "lubuntu_gtxss" que aparecerá no VirtualBox
+1. Inicie a máquina virtual daso um duplo clique na máquina "lubuntu_gtxss" que aparecerá no VirtualBox
 2. Abra o navegador Firefox
 3. Caso não seja redirecionado automaticamente, digite na barra de busca na parte superior da tela "127.0.0.1"
 
 E pronto, você já está acessando o nosso conteúdo localmente em sua própria máquina. Aproveite! Bons Estudos.
 
-## Recriar
+## Recriação
 
 Esta seção é uma demonstração de como configurar todo o ambiente do projeto criando uma máquina virtual do zero. Caso já tenha feito a instalação padrão no passo a passo anterior, esta seção não será necessária.
 
@@ -95,13 +95,29 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     ```bash
     https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html.html.html.html
     ```
-2. Escolha um sistema operacional (recomendamos que seja um sistema baseado em Unix como Ubuntu ou Debian) para criar sua máquina virtual:
+2. Escolha um sistema operacional (recomendamos que seja um sistema Linux como Ubuntu ou Lubuntu, os passos a seguir consideram a utilização de um sistema operacional Linux) para criar sua máquina virtual:
 
     - Você deverá realizar o download da ISO deste sistema operacional em seu site oficial e realizar sua instalação no gerenciador escolhido.
 
+    Site para download da ISO do Ubuntu:
+
+    ```bash
+    https://ubuntu.com/download/desktop
+    ```
+
+    Site para download da ISO do Lubuntu:
+
+    ```bash
+    https://lubuntu.me/downloads/
+    ```
+
+    - Após download da ISO, abra o VirtualBox, crie uma nova máquina virtual com as especificações do sistema operacional escolhido (Ex. Tipo: Linux, Versão: Ubuntu (64 bits)), adicione o tamanho e a quantidade de memória desejados e selecione a imagem ISO baixada para criar o ambiente.
+
+    - Após a criação, você irá inicializar a sua máquina virtual e deverá realizar o processo de instalação do sistema operacional.
+
 3. Inicialize sua máquina virtual
 
-    - Após ter sido realizada a instalação, ligue sua máquina virtual.
+    - Após ter sido realizada a instalação, inicie sua máquina virtual.
 
 4. Faça download do servidor Apache:
 
@@ -136,7 +152,7 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     mysql --version
     ```
 
-5. Execute as configurações de senha do seu mysql:
+5. Execute as configurações de política de senha do seu mysql:
 
     Digite o comando:
 
@@ -144,7 +160,7 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     sudo mysql_secure_installation
     ```
 
-    Selecione a tecla "Y" ou "y" para setar uma senha e logo em seguida escolha o nível da política de senha do seu banco de dados selecionando a opção 0.
+    Selecione a tecla "Y" ou "y" para criar uma senha e logo em seguida escolha o nível da política de senha do seu banco de dados selecionando a opção 0.
 
     Para as perguntas seguintes a esta, selecione "Y" ou "y" em todas para aceitar.
 
@@ -156,7 +172,9 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     sudo mysql -u root -p
     ```
 
-    Pressione Enter. Caso seu acesso ao mysql tenha sido executado, as configurações foram realizadas corretamente. Caso opte por escolher uma senha ao invés da autenticação padrão, use o comando:
+    Pressione Enter. Caso seu acesso ao mysql tenha sido executado, as configurações foram realizadas corretamente. 
+    
+    Caso deseje definir uma senha para o usuário root, use o comando:
 
    ```bash
    ALTER USER 'root'@'localhost' IDENTIFIED BY 'NovaSenha';
