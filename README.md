@@ -83,18 +83,15 @@ E pronto, você já está acessando o nosso conteúdo localmente em sua própria
 
 Esta seção é uma demonstração de como configurar todo o ambiente do projeto criando uma máquina virtual do zero. Caso já tenha feito a instalação padrão no passo a passo anterior, esta seção não será necessária.
 
-1. Realize a instalação do VirtualBox ou VMWare:
+1. Realize a instalação do software de virtualização VirtualBox:
 
     VirtualBox:
 
     ```bash
     https://www.virtualbox.org/wiki/Downloads
     ```
-    VMWare:
-
-    ```bash
-    https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html.html.html.html
-    ```
+    Acesse as instruções de instalação através do link apresentado anteriormente de acordo com o sistema operacional que possui em sua máquina. 
+    
 2. Escolha um sistema operacional (recomendamos que seja um sistema Linux como Ubuntu ou Lubuntu, os passos a seguir consideram a utilização de um sistema operacional Linux) para criar sua máquina virtual:
 
     - Você deverá realizar o download da ISO deste sistema operacional em seu site oficial e realizar sua instalação no gerenciador escolhido.
