@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #1B1464;
+
+}
+
+.title{
+    font-family: 'Inter-Regular', fallback, sans-serif;
+    color: #1B1464;
+    font-weight:bolder;
+}
+
+
+.button_level {
+
+    background-color: #f2f2f2;
+    border: 1px solid #1B1464;
+    color: #1B1464;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.button_level p.text_init_level, p.text_interm_level, p.text_avanc_level{
+    display: none;
+}
+
+#btn_init_level, #btn_interm_level, #btn_avanc_level {
+    width: 170px;
+    height: 170px;
+}
+
+#btn_init_level:hover{
+    border: 1px solid #1B1464;
+    background-color: #1B1464;
+    width: 190px;
+    height: 190px;
+
+    transition: all cubic-bezier(.5, 0, .5, 1) .4s;
+}
+
+/*transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) .4s;*/
+
+#btn_interm_level:hover{
+    border: 2px solid #1B1464;
+    background-color: #1B1464;
+    width: 190px;
+    height: 190px;
+
+    transition: all cubic-bezier(.5, 0, .5, 1) .4s;
+    
+}
+
+#btn_avanc_level:hover{
+    border: 1px solid #1B1464;
+    background-color: #1B1464;
+    width: 190px;
+    height: 190px;
+
+    transition: all cubic-bezier(.5, 0, .5, 1) .4s;
+}
+
+.text_level{
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Jost-Light', fallback, sans-serif;
+}
+
+.text_{
+    font-family: 'Inter-Regular', fallback, sans-serif;
+    font-size: 14px;
+    color: #1B1464;
+}
+
+.subtext_{
+    font-family: 'Inter-Regular', fallback, sans-serif;
+    font-style: italic;
+    font-size: 10px;
+    color: #1B1464;
+}
+
+/*
+.speech {
+    width: 350px;
+    background: #1B1464;
+    border: 1px solid #1B1464;
+    padding: 15px;
+    text-align: left;
+    font-size: 13px;
+    border-radius: 8px;
+    color: #fff;
+    position: relative;
+    margin-right: -60px;
+    top: -20px;
+}
+*/
+
+.robot{
+    margin-left: -30px;
+}
+
+.robot_speech {
+    position: relative;
+    height: 20px;
+    margin-right: -35px;
+    top: -100px;
+}
+
+.robot_speech p {
+    position: absolute;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Josefin', fallback, sans-serif;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 15px;
+    color: #1B1464;
+
+}
+
+#cursor {
+  display: inline-block;
+  width: 0.2em;
+  height: 1em;
+  background-color: #1B1464;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media(max-width: 500px){
+    .robot_speech {
+        position: relative;
+        height: 20px;
+        margin-right: -35px;
+        top: -100px;
+        transform: skew(10,10);
+    }
+}
+
+.writer{
+    animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+}

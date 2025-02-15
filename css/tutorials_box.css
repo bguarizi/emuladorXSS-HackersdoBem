@@ -1,0 +1,286 @@
+/*CSS Voltado para Páginas Teóricas */
+.card {
+  background-color: transparent;
+  width: 100%;
+  perspective: 1000px;
+  margin-bottom: 40px;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 4px;
+  height: 150px;
+}
+
+.card-inner {
+  height: 150px;
+  position: relative;
+  width: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+}
+
+.card.flip .card-inner {
+  animation-name: card;
+  animation-duration: 1s;
+  transform: rotateY(-180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 8px 12px rgba(0, 0, 0.3, 0.3);
+}
+
+.card-back .back-text {
+  font-size: clamp(0.7rem, 0.9vw, 1.3rem);
+}
+
+@keyframes card {
+  0% {
+    right: 0px;
+    top: 0px;
+  }
+
+  15% {
+    right: 15px;
+    top: -2px;
+  }
+
+  25% {
+    right: 35px;
+    top: -5px;
+  }
+
+  50% {
+    right: 25px;
+    top: -2px;
+  }
+
+  75% {
+    right: 5px;
+    top: 0px;
+  }
+
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+.card-front {
+  color: black;
+  background-color: #f0ecec;
+  border: 2px solid #1B1464;
+  color: #1B1464;
+  border-radius: 15px;
+  font-family: 'Itim', sans-serif;
+}
+
+
+.card-back {
+  color: #ffff;
+  transform: rotateY(180deg);
+  background-color: #1B1464;
+  font-family: 'Jost', sans-serif;
+}
+
+#container-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+#advice {
+  /*Parou de ser usado*/
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: #007bff;
+}
+
+.symbol {
+  align-self: center;
+}
+
+.icon-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-text-heading {
+  margin: 0;
+  margin-top: 0.5rem;
+  line-height: 0.8;
+}
+
+
+
+/*Texto Geral*/
+.central-box {
+  padding-top: 40px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.central-text {
+  font-family: 'Jost', sans-serif;
+  text-align: justify;
+  padding: 0;
+}
+
+#first-text {
+  margin-bottom: 40px;
+}
+
+#second-text {
+  margin-bottom: 30px;
+}
+
+.bottom-symbol {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2.5%;
+  margin-right: 2.5%;
+  right: 0;
+}
+
+
+.back-text {
+  font-family: 'Jost-Regular';
+  max-height: 95%;
+  justify-self: center;
+  word-wrap: normal;
+}
+
+.card-back {
+  padding-right: 13%;
+  font-size: 40px;
+  padding-left: 13%;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+}
+
+/*Botões*/
+.transition-button {
+  position: absolute;
+  bottom: 20px;
+  background-color: #1B1464;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 4vw;
+  font-size: max(80%, 12px);
+  text-align: start;
+  min-width: 100px;
+  font-weight: bold;
+  font-family: 'Jost-Regular';
+
+}
+
+#transition-back {
+  left: 100px;
+  white-space: nowrap;
+}
+
+#transition-next {
+  right: 100px;
+  white-space: nowrap;
+}
+
+.container-buttons {
+  min-height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+
+/*Configurações gerais do robot*/
+.container-robot {
+  border-radius: 3px;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+  padding-top: 13px;
+  width: 100%;
+}
+
+.robot-speech {
+  background: #FFFF;
+  border-radius: 18px;
+  border: 1px solid grey;
+  font-size: 18px;
+  line-height: 1.6em;
+  margin: 12px 20px;
+  padding: 12px;
+  position: relative;
+  margin-right: auto;
+  z-index: 10;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.robot-speech::after {
+  content: '';
+  height: 25px;
+  position: absolute;
+  z-index: 1;
+  border-bottom: 30px solid #fff;
+  border-right: 20px solid transparent;
+}
+
+.container {
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;  
+  display: block;
+}
+
+.image-container {
+  height: auto;
+  position: relative;
+  width: 70%;
+  margin-left: -5%;
+  margin-right: -5%;
+  display: flex;
+  flex: 1;
+
+}
+
+#balloon-text {
+  margin-bottom: 0;
+}
+
+.robot {
+  position: absolute;
+  pointer-events: none;  
+}

@@ -1,0 +1,341 @@
+.content{
+    font-family: 'Inter', sans-serif;
+}
+
+.cart-product{
+    background-color: rgba(248,249,250,1);
+    margin-bottom: 7px;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.form-content-all{
+    display: flex;
+    margin-left: 5%;
+    
+}
+
+
+.form-content-payment{
+    display: inline-block;
+    width: 45%;
+}
+
+.form-content-products{
+    display: inline-block;
+    width: 45%;
+    margin-right: 1%;
+}
+
+
+.form-content{
+    display: block;
+    width: 100%;
+    background-color: white;
+    border-top: 2.5px #E8E8E8 solid;
+    border-bottom: 2.5px #E8E8E8 solid;
+    padding-top: 10px;
+    min-height: 470px;
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    margin-right: 15px;
+}
+
+.products-content{
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    border-top: 2.5px #E8E8E8 solid;
+    border-bottom: 2.5px #E8E8E8 solid;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 10px;
+    min-height: 470px;
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+
+.form-content-cupom{
+    display: block;
+    width: 100%;
+    background-color: white;
+    border-top: 2.5px #E8E8E8 solid;
+    border-bottom: 2.5px #E8E8E8 solid;
+
+    padding-top: 10px;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    margin-bottom: 5px;
+}
+
+.form-content-entrega{
+    
+    width: 100%;
+    background-color: white;
+    border-top: 2.5px #E8E8E8 solid;
+    border-bottom: 2.5px #E8E8E8 solid;
+
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    height: 100px;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.delivery-field{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.delivery-field p{
+    margin: 0;
+    width: 45%;
+    display: inline-block;
+    
+}
+
+.title-delivery{
+    color: #1B1464;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+
+}
+
+.title-delivery img{
+    margin-left: 5px;
+
+}
+
+.subtitle-delivery{
+    color: #1B1464;
+    font-size: 16px;
+    text-align: right;
+}
+
+
+.title-products-content{
+    color: #1B1464;
+    text-align: left;
+}
+
+.title-way-payment, .form-check{
+    color: #1B1464;
+    text-align: left;
+    width: 95%;
+}
+
+.title-way-payment{
+    padding-top: 5px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.text-payment{
+    color: #1B1464;
+    text-align: right;
+    width: 95%;
+    margin: 0;
+}
+
+.text-total{
+    color: #1B1464;
+    text-align: center;
+    font-weight: bold;
+}
+
+.payment-input{
+    font-size: 15px;
+    height: 40px;
+    border-top: 2.5px #E8E8E8  solid;
+    border-bottom: 2.5px #E8E8E8  solid;
+    border-right: 0.5px #f4efef  solid;
+    border-left: 0.5px #f4efef  solid;
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  .input-container img {
+    position: absolute;
+    left: 10px; /* Espaçamento horizontal */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px; /* Ajuste conforme necessário */
+  }
+
+  .input-container input {
+    padding-left: 40px; /* Cria espaço para a imagem */
+    height: 40px; /* Altura do input */
+  }
+
+.form-check{
+    margin-left: 20px;
+}
+
+.product-details{
+    display: inline-block;
+}
+
+.div-form{
+   text-align: center !important;
+   padding: 15px 0px;
+}
+
+.div-form p{
+    margin: 2px 0px;
+    margin-left: 50%;
+}
+
+.text-input-cart{
+    color: #1B1464;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.text-right{
+    text-align: right;
+}
+
+.cupom-div-title{
+    display: grid;
+    place-items: center;
+}
+
+.div-cupom-div{
+    display: grid;
+    place-items: center;
+ 
+}
+
+
+.cupom-div{
+    width: 95%;
+    text-align: left;
+}
+
+.cupom-title{
+    background-color: #1B1464;
+    color: white;
+    width: 95%;
+    padding: 5px 0;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.cupom-input{
+    width: 80%;
+    font-size: 15px;
+    height: 40px;
+    margin-right: 1%;
+    border-top: 2.5px #E8E8E8  solid;
+    border-bottom: 2.5px #E8E8E8  solid;
+    border-right: 0.5px #f4efef  solid;
+    border-left: 0.5px #f4efef  solid;
+}
+
+.cupom-button{
+    color: white;
+    padding: 5px 20px;
+    margin: 10px 0px;
+}
+
+.text-cep{
+    color: #1B1464;
+    text-align: left;
+}
+
+.title-questions{
+    color: #1B1464;
+    text-align: left;
+    padding: 12px 0px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.cart-comments{
+    height: auto;
+    display: flex;
+}
+
+.div-comments{
+    width: 60%;
+    display: inline-block;
+    border-top: 2.5px #E8E8E8  solid;
+    border-bottom: 2.5px #E8E8E8  solid;
+    border-right: 0.5px #f4efef  solid;
+    border-left: 0.5px #f4efef  solid;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    height: 180px;
+    overflow-y: auto;
+    scrollbar-width: auto;
+}
+
+
+.cart-comment-user{
+    color: #1B1464;
+    text-align: left;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+.cart-comment-content{
+    color: #1B1464;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.comment-cart-textarea{
+    height: auto;
+    font-size: 15px;
+    resize: none;
+    width: 100%;
+    border: none;
+    border-top: 2.5px #E8E8E8 solid;
+    border-bottom: 2.5px #E8E8E8  solid;
+    border-right: 0.5px #f4efef  solid;
+    border-left: 0.5px #f4efef  solid;
+}
+
+.form-content-comments{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    width: 86%;
+    background-color: white;
+    border-top: 2.5px #E8E8E8 solid;
+    border-bottom: 2.5px #E8E8E8 solid;
+    padding-top: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    margin-left: 5%;
+}
+

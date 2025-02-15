@@ -1,0 +1,34 @@
+/*Botões*/
+.transition-button {
+    position: absolute;
+    bottom: 20px;
+    background-color: #1B1464;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 11%;
+    font-size: 12px;
+    text-align: start;
+    min-width: 100px;
+    font-weight: bold;
+    font-family: 'Jost-Regular';
+    
+  }
+
+#transition-back {
+    left: 30px;
+
+}
+
+#transition-next {
+    right: 30px;
+
+}
+.container-buttons {
+    min-height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}

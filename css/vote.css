@@ -1,0 +1,149 @@
+.content{
+    font-family: 'Inter', sans-serif;
+}
+
+.vote{
+    display: flex;
+    justify-content: center;
+}
+
+.vote-title{
+    color: #1B1464;
+    font-size: 35px;
+    padding: 15px 22%;
+}
+
+.vote-product{
+    display: inline-block;
+    padding: 20px;
+    margin: 10px 20px;
+}
+
+.versus{
+    display: inline-block;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.versus img{
+    width: 80px;
+}
+
+.name-product{
+    color: #1B1464;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.count-votes{
+    color: #1B1464;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.vote-button{
+
+    background-color: #00d600;
+    padding: 10px 40px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.text-input{
+    color: #1B1464;
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.vote-input{
+    width: 550px;
+    height: 80px;
+    font-size: 15px;
+    resize: none;
+}
+
+.vote-input-short{
+    height: 40px;
+    margin-right: 10px;
+}
+
+.btn-custom-2{
+    display: block;
+}
+
+.div-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-search{
+    display: inline;
+}
+
+.div-button-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.border-input{
+    border: none;
+    border-top: 2.5px #E8E8E8 solid;
+    border-bottom: 2.5px #E8E8E8  solid;
+    border-right: 0.5px #f4efef  solid;
+    border-left: 0.5px #f4efef  solid;
+}
+
+form{
+    margin-top: 50px;
+}
+
+.comment-section{
+    margin-top: 30px;
+}
+
+.vote-search-button{
+    border-radius: 18px;
+    background-color: #00d600;
+    padding: 5px 15px;
+    margin-right: -70px;
+}
+
+.div-comments{
+    border-top: 2.5px #E8E8E8  solid;
+    border-bottom: 2.5px #E8E8E8  solid;
+    border-right: 0.5px #f4efef  solid;
+    border-left: 0.5px #f4efef  solid;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    background-color: white;
+    height: 130px;
+}
+
+.cart-comment-user{
+    color: #1B1464;
+    text-align: left;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+.cart-comment-content{
+    color: #1B1464;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 8px;
+}

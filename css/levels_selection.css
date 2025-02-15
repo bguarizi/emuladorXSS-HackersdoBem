@@ -63,63 +63,71 @@ body{
 }
 
 .text_level{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: lighter;
     font-family: 'Jost-Light', fallback, sans-serif;
 }
 
 .text_{
     font-family: 'Inter-Regular', fallback, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #1B1464;
 }
 
 .subtext_{
     font-family: 'Inter-Regular', fallback, sans-serif;
     font-style: italic;
-    font-size: 10px;
+    font-size: 14px;
     color: #1B1464;
 }
 
-/*
-.speech {
-    width: 350px;
-    background: #1B1464;
-    border: 1px solid #1B1464;
-    padding: 15px;
-    text-align: left;
-    font-size: 13px;
-    border-radius: 8px;
-    color: #fff;
+
+/*robot config*/
+.container-robot{
+    font-family: 'Itim', fallback, sans-serif;
+    color: hsl(245, 67%, 24%);;
+    border-radius: 3px;
+    justify-content: center; 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    width: 60%;
+    padding: 0;
+    transform: translateY(-20%);
+    display:block;
+    margin:auto;
+  }
+  
+  .robot-speech {
+    background: #FFFF;
+    border-radius: 18px;
+    border: 1px solid grey; 
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 12px 20px;
+    padding: 12px;
     position: relative;
-    margin-right: -60px;
-    top: -20px;
-}
-*/
-
-.robot{
-    margin-left: -30px;
-}
-
-.robot_speech {
-    position: relative;
-    height: 80px;
-    margin-right: -30px;
-    top: 20px;
-}
-
-.robot_speech p {
-    position: absolute;
-    font-size: 13px;
-    text-align: left;
-    font-family: 'Josefin', fallback, sans-serif;
-    width: 300px;
-    margin: 0;
-    padding-left: 10px;
-    padding-right: 15px;
-    color: #1B1464;
-
-}
+    max-width: 40%;
+    margin-left: auto; 
+    transform: translateX(-120%) translateY(100px); 
+    z-index:10;
+    overflow-wrap: break-word;
+  }
+  .robot-speech::after { /*Cauda do Balão*/
+      content: '';
+      height: 25px;
+      position: absolute;
+      z-index: 1;
+      border-bottom: 30px solid #fff; 
+      border-right: 20px solid transparent; 
+      bottom: -10px; 
+      right: -10px; 
+      transform: rotate(135deg); 
+  }
+  .robot{
+    transform: translateX(30%);  
+  }
 
 #cursor {
   display: inline-block;

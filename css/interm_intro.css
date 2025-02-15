@@ -1,0 +1,49 @@
+body{
+    overflow-x: hidden;
+  }
+
+.image-container img {
+    height: auto;
+    display: block;
+  }
+  .robot-speech {
+    max-width: 35%;
+    margin-left: auto; 
+    transform: translateX(-140%) translateY(100px); 
+    z-index:10;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+  .robot-speech::after{
+      bottom: -10px; 
+      right: -10px; 
+      transform: rotate(140deg); 
+  }
+  .container-robot{
+    margin-top: 20% auto 0;
+    display:block;
+  }
+  .robot{
+    transform: translateX(30%);  
+  }
+  .writer{
+    text-align: justify;
+    justify-content: left;
+    margin-bottom: 0px;
+  }
+  @media(max-width:800px){
+    .robot{
+      transform: translateX(55%);  
+    }
+    .robot-speech {
+    max-width: 30vw;
+    margin-right: auto;
+    transform: translateX(-10vw) translateY(110px); 
+  }
+  }
+  @media(min-width:2000px){
+    .robot-speech {
+    max-width: 25%;
+    transform: translateX(-195%) translateY(110px); 
+  }
+  }

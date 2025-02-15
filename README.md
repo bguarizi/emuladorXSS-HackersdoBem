@@ -1,10 +1,14 @@
 # Hackers do Bem - GT-EXSS
 
-Este repositório está vinculado ao artigo "EXSS: Um Emulador Educativo de Ataques Cross-Site Scripting (Código Aberto)". O artigo foi submetido ao Salão de Ferramentas da 24º edição do Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais.
+A primeira versão deste repositório está vinculada ao artigo "EXSS: Um Emulador Educativo de Ataques Cross-Site Scripting (Código Aberto)". O artigo foi submetido ao Salão de Ferramentas da 24º edição do Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais.
 
 Resumo: Este artigo propõe um emulador de ataques Cross-Site Scripting (XSS) para o aprendizado em cibersegurança. O emulador permite que usuários identifiquem sítios Web vulneráveis a ataques XSS em um ambiente controlado. A identificação de vulnerabilidades se dá pela realização de atividades que são compostas por uma introdução teórica sobre o assunto da atividade, seguida de procedimentos práticos para a realização de testes de vulnerabilidade XSS em um servidor Web executado em uma máquina virtual. São desenvolvidas atividades para diferentes níveis de conhecimento. A particularidade do emulador proposto é a sua abordagem educativa e seu objetivo é conscientizar alunos de graduação e profissionais a desenvolver sítios Web menos vulneráveis.
 
-Você pode encontrar vídeos de instalação e demonstração das páginas da ferramenta aqui: 
+A versão atual está vinculada ao artigo "EXSS: an Educational Emulator for Cross-Site Scripting Attacks", publicado no Journal of the Brazilian Computer Society (JBCS).
+
+Resumo: This article proposes a Cross-Site Scripting (XSS) attack emulator for learning in cybersecurity. The emulator allows users to identify websites vulnerable to XSS attacks in a controlled environment. The identification of vulnerabilities is achieved through activities that consist of a theoretical introduction to the topic, followed by practical procedures for conducting XSS vulnerability tests on a web server running on a virtual machine. Activities are developed for different levels of knowledge. The particularity of the proposed emulator is its educational approach and its goal is to raise awareness among undergraduate students and professionals to develop less vulnerable websites.
+
+Você pode encontrar vídeos de instalação e demonstração das páginas da ferramenta aqui:
 
 - Opção 1 (Através da página do projeto):
 
@@ -47,7 +51,7 @@ Acesse as instruções de instalação através do link apresentado anteriorment
    http://www.midiacom.uff.br/gt-exss/
     ```
 
-    Role a página e clique no botão "Download" e prossiga com o download.
+    Role a página e clique no botão "Download do Emulador" e, na próxima página, clique no botão de download.
 
     Opção 2 (Através do link do Google Drive):
 
@@ -56,25 +60,36 @@ Acesse as instruções de instalação através do link apresentado anteriorment
    ```bash
    https://drive.google.com/drive/folders/1Dpi8TWZnwcbUaoh97W8wuYgVQ6S_fajf
     ```
-   - Dê um duplo clique no arquivo "lubuntu_gtexss.zip" e clique para fazer download
+   - Dê um duplo clique no arquivo .zip contido na pasta e clique no botão de download.
    
 
    Isto irá iniciar o processo de download da nossa máquina virtual.
 
-3. Adicione a máquina virtual ao gerenciador instalado (VirtualBox):
+3. Extraia o arquivo baixado:
 
    - Após o download ser concluído, extraia o arquivo zip baixado
-   - Acesse a pasta lubuntu_gtexss e dentro dela acesse a pasta de mesmo nome (lubuntu_gtexss)
-   - Em seguida, dê um duplo clique no arquivo "lubuntu_gtxss.vbox" para abri-lo no VirtualBox
 
-   Isto irá adicionar nossa máquina virtual ao VirtualBox.
+Para adicionar a máquina ao VirtualBox há duas opções:
+
+4.1.
+
+   - Acesse a pasta extraída dando dois cliques nela
+   - Em seguida, dê um duplo clique no arquivo .vbox para abri-lo no VirtualBox
+   - Caso o processo ocorra corretamente e a máquina abra no VirtualBox, passe para a etapa de Uso do nosso tutorial
+
+4.2.
+
+   - Abra o VirtualBox e clique em "Acrescentar" no menu superior
+   - Procure pela pasta que foi extraída e dê dois cliques nela
+   - Selecione o arquivo .vbox dentro desta pasta dando dois cliques no mesmo ou selecionando-o e clicando no botão "Abrir"
+   - Caso o processo ocorra corretamente e a máquina abra no VirtualBox, passe para a etapa de Uso do nosso tutorial
 
 ## Uso
 
-Após a instalação ter sido realizada corretamente, você está pronto para acessar o nosso conteúdo:
+Após a etapa de instalação ter sido realizada corretamente, você está pronto para acessar o nosso conteúdo:
 
-1. Inicie a máquina virtual daso um duplo clique na máquina "lubuntu_gtxss" que aparecerá no VirtualBox
-2. Abra o navegador Firefox
+1. Inicie a máquina virtual dando um duplo clique na máquina adicionada que aparecerá no VirtualBox
+2. Caso o navegador não carregue automaticamente, abra o navegador Firefox
 3. Caso não seja redirecionado automaticamente, digite na barra de busca na parte superior da tela "127.0.0.1"
 
 E pronto, você já está acessando o nosso conteúdo localmente em sua própria máquina. Aproveite! Bons Estudos.
@@ -90,7 +105,7 @@ Esta seção é uma demonstração de como configurar todo o ambiente do projeto
     ```bash
     https://www.virtualbox.org/wiki/Downloads
     ```
-    Acesse as instruções de instalação através do link apresentado anteriormente de acordo com o sistema operacional que possui em sua máquina. 
+    Acesse as instruções de instalação através do link apresentado anteriormente de acordo com o sistema operacional que possui em sua máquina.
     
 2. Escolha um sistema operacional (recomendamos que seja um sistema Linux como Ubuntu ou Lubuntu, os passos a seguir consideram a utilização de um sistema operacional Linux) para criar sua máquina virtual:
 

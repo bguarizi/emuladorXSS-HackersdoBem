@@ -1,0 +1,42 @@
+
+
+.central-text{
+    color: #1B1464;
+    font-family: 'Jost', sans-serif;
+    text-align: justify;
+}
+
+.robot_speech {
+    background-size: cover; 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.image-container img{
+    position:flex;
+    display: flex;
+    height: auto;
+}
+
+.robot{
+    width: 15vw; 
+    height: 15vw; 
+    background-size: cover;
+    background-position: center; 
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    margin-left: 20vw;
+
+}

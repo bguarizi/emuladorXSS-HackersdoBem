@@ -37,7 +37,7 @@ nav {
     padding: 0px 6%;
 }
 
-.nav-item, .navbar-brand{
+.navbar-brand{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
@@ -99,7 +99,6 @@ nav {
 
 .btn-flutuante {
     position: fixed;
-    bottom: 20px; /* Distância do fundo */
     right: 20px; /* Distância da direita */
     z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
 }

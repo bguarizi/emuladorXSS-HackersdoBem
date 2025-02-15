@@ -5,14 +5,18 @@
 .menu-lateral {
     top: 0;
     left: 0;
-    width: 20vw;
+    width: 21vw;
     background-color: hsl(245, 67%, 24%);
     color: white;
     padding: 20px;
     display: block;
-    height: 100vmax;
+    height: 100%;
     overflow-y: auto;
+    scrollbar-width: auto;
+    position: fixed;
+    z-index: 10;
 }
+
 div ul {
     list-style: none;
     padding: 0;
@@ -26,22 +30,9 @@ div ul li a {
     text-decoration: none;
 }
 
-.btn-container{
-    margin-top: 0px;
-    margin-bottom: 15px;
-    width: 100%;
-}
-.btn-container button{
-    background-color: hsl(245, 67%, 24%);
+div ul li a:visited {
     color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    border-radius: 12px;
-    font-size: 12px;
-}
-.btn-container button:focus{
-    background-color: hsl(245, 27%, 34%);
+    text-decoration: none;
 }
 
 .img-logo{
@@ -93,7 +84,8 @@ div ul li a {
     background-color: hsl(245, 67%, 24%);
     color: white;
     padding: 20px;
-
+    position: fixed;
+    z-index: 10;
 }
 
 .menu-lateral-closed img{
@@ -114,6 +106,11 @@ div ul li a {
     font-family: 'Itim', fallback, sans-serif;
 }
 
+.pontuacao{
+    padding: 10px 0px;
+    font-family: 'Itim', fallback, sans-serif;
+}
+
 
 .dropdown img{
     width: 20px;
@@ -128,6 +125,28 @@ div ul li a {
 .content {
     /* margin: 30px; */
     /* margin-left: 20%; /* ajuste para o espaço ocupado pelo menu lateral */
+    margin-left: 21vw;
     padding: 20px;
-    width: 80vw;
+    margin-right: 0px;
+    width: 100% !important;
+    text-align: center;
+
 }
+
+.progress {
+    margin-top: 32px;
+}
+
+.medalhas {
+    text-align: center !important;
+    margin-top: 50px;
+    display: flex;            /* Define o layout flex */
+    justify-content: center;  /* Centraliza os itens horizontalmente */
+    gap: 20px;                /* Espaçamento entre as imagens (opcional) */
+}
+
+medalhas img{
+    width: 100px;             /* Define o tamanho das imagens (ajuste conforme necessário) */
+  height: auto;
+}
+

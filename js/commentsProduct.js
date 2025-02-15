@@ -57,14 +57,14 @@ for (let i = 0; i < ratings.length; i++) {
     somadeUsuarios += ratings[i];
 }
 
+/*
 const bars = document.querySelectorAll('.progress-bar');
 const progressBarContainer = document.querySelector('.progress-bar-container');
-;
 
 
 bars.forEach((bar, index) => {
     bar.style.width = `${(ratings[index] * 100) / somadeUsuarios}%`;
-});
+});*/ // QUando implementar lembrar que interfere na barra de progresso do usuário no menu lateral
 
 //Coracao
 const heartSymbol = document.getElementById('heart-symbol');
@@ -72,10 +72,10 @@ let isRed = false;
 
 heartSymbol.addEventListener('click', function () {
     if (isRed) {
-        heartSymbol.src = 'img/heart_symbol.png';
+        heartSymbol.src = '../img/heart_symbol.png';
         isRed = false;
     } else {
-        heartSymbol.src = 'img/red_heart_symbol.png';
+        heartSymbol.src = '../img/red_heart_symbol.png';
         isRed = true;
     }
 });

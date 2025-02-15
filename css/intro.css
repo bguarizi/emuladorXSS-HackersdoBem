@@ -1,0 +1,219 @@
+.card {
+    background-color: transparent;
+    width: 100%;
+    height: 200px; 
+    perspective: 1000px; 
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;  
+
+  }
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    transition: all 1.2s;
+    border-radius: 15px;
+  }
+
+  .card.flip .card-inner{
+    animation-name: card;
+    animation-duration: 1s;
+    transform: rotateY(-180deg);
+
+  }
+  @keyframes card {
+  0%   { right:0px; top:0px;}
+  15%  {right: 15px; top: -2px;}
+  25%  {right: 35px; top:-5px;}
+  50%  {right: 25px; top:-2px;}
+  75%  {right: 5px; top:0px;}
+  100% {right:0px; top:0px;}
+  }
+
+  .card-front, 
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 8px 12px rgba(0, 0, 0.3, 0.3); 
+
+  }
+
+  .card-front {
+    color: black;
+    background-color: #f0ecec;
+    border: 2px solid #1B1464;
+    color: #1B1464;
+    border-radius: 15px;
+    font-family: 'Itim', sans-serif;
+    line-height: 1.0;
+  }
+
+  .card-back {
+    color: #ffff;      
+    transform: rotateY(-180deg);
+    background-color: #1B1464;
+    font-family: 'Jost', sans-serif;
+  }
+
+  #container-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;    
+  }
+  #advice{
+      font-style: italic;
+      font-size: 0.9rem;
+  }
+  .icon {
+      width: 32px; 
+      height: 32px; 
+      color: #007bff; 
+}
+
+  .symbol{
+    margin-right: 1%;
+  }
+
+  .back-text{
+    font-family: 'Jost-Regular';
+    max-height: 95%;
+    justify-self: center;
+    word-wrap:normal;
+  }
+  .card-back{
+    padding-right: 13%;
+    padding-left: 13%;
+    padding-bottom:4vh;
+    padding-top:4vh;
+    font-size: 2.3vh;
+  }
+
+.bottom-symbol {
+  position: absolute;
+  bottom: 0; 
+  margin-bottom: 20px;
+  margin-right: 20px;
+  right: 0;  
+}
+/* Texto Geral */
+.central-box{
+  padding-top: 40px; 
+  padding-left: 90px; 
+  padding-right: 90px;
+}
+.central-text{
+  font-family: 'Jost', sans-serif;
+  text-align: justify;
+}
+#first-text{
+  margin-bottom: 40px;
+}
+#second-text{
+  margin-bottom: 30px;
+}
+
+/*Botões*/
+.transition-button {
+  position: absolute;
+  bottom: 20px;
+  background-color: #1B1464;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 4vw;
+  font-size: max(80%, 12px);
+  text-align: start;
+  min-width: 100px;
+  font-weight: bold;
+  font-family: 'Jost-Regular';
+
+}
+
+#transition-back {
+  left: 100px;
+
+}
+
+#transition-next {
+  right: 100px;
+
+}
+.container-buttons {
+  min-height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+
+/*robot config*/
+.container-robot{
+  border-radius: 3px;
+  justify-content: center; 
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+  padding-top: 13px;
+  width: 100%;
+  padding: 0;
+  transform: translateY(-20%);
+  display:block;
+  margin:auto;
+  margin-top:10px;
+}
+
+.robot-speech {
+  background: #FFFF;
+  border-radius: 18px;
+  border: 1px solid grey; 
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 12px 20px;
+  padding: 12px;
+  position: relative;
+  max-width: 40%;
+  margin-left: auto; 
+  transform: translateX(-120%) translateY(100px); 
+  z-index:10;
+  overflow-wrap: break-word;
+}
+.robot-speech::after { /*Cauda do Balão*/
+    content: '';
+    height: 25px;
+    position: absolute;
+    z-index: 1;
+    border-bottom: 30px solid #fff; 
+    border-right: 20px solid transparent; 
+    bottom: -10px; 
+    right: -10px; 
+    transform: rotate(135deg); 
+}
+.robot{
+  transform: translateX(30%);  
+}
+
+/*container*/
+.container{
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+#balloon-text{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

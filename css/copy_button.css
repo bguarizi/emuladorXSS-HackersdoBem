@@ -1,0 +1,31 @@
+#codeBlock {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    overflow: auto;
+    font-family: monospace;
+    display: block;
+}
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.copied{
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #00FA9A;
+    overflow: auto;
+    font-family: monospace;
+    display: none;
+}
+
+#codeBlock2 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    overflow: auto;
+    font-family: monospace;
+    display: block;
+}
